@@ -1,0 +1,22 @@
+<html>
+    <body>
+        <table border="1">
+            <tr>
+                <td>id</td>
+                <td>Title</td>
+                <td>Deskripsi</td>
+            </tr>
+            <%
+             for var i = 0; i< data.length;i++ {
+            %>
+            <tr>
+                <td><% = data[i].id%></td>
+                <td><% = data[i].title%></td>
+                <td><% = data[i].content%></td>
+            </tr>
+            <%
+            }
+            %>
+        </table>
+    </body>
+</html>
